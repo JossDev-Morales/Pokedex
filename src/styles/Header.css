@@ -1,0 +1,73 @@
+:root {
+  --color-black: #000;
+  --color-dark-gray: #121212;
+  --color-red:#e72121;
+  --color-blue: #00bfff;
+  --color-white: #fff;
+  --color-yellow: #ffff00;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+}
+
+.title-text {
+  color: var(--color-red);
+}
+
+.welcome-message {
+  font-size: 16px;
+  color: rgb(59, 59, 59);
+  margin-top: 10px;
+  text-align: center;
+}
+
+.trainer-name {
+  font-weight: bold;
+  color:white;
+}
+
+.logout__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.logout__btn {
+  background-color:#e72121;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 10px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid #e72121;
+}
+
+.logout__btn a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.logout__btn:hover {
+  background-color: white;
+  border-color: #e72121;
+  transform: scale(1.1);
+}
+.logout__btn:hover a{
+  color: #e72121;
+}

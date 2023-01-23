@@ -1,0 +1,63 @@
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #8f54a0 #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff00;
+  }
+
+/* Global  */
+
+html {
+  font-size: 62.5%;
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  background-color: #f5f5f5;
+}
+@font-face {
+  font-family: 'Pokemon-solid';
+  src: url('/src/assets/fonts/Pokemon-Solid.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Pokemon-hollow';
+  src: url('/src/assets/fonts/Pokemon-Hollow.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Kanit';
+  src: url('/src/assets/fonts/kanitBold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: 'Kanit';
+}
+:root{
+  --main-red:#e72121;
+  --main-grey: #121212;
+  --main-white:#e7e7e7;
+  --font-solid:'Pokemon-solid';
+  --font-hollow:'Pokemon-hollow';
+}
+input{
+  color: #121212;
+}

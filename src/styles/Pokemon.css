@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+:root {
+  --color-black: #000;
+  --color-dark-gray: #121212;
+  --color-light-gray: #ccc;
+  --color-red: #d93f3f;
+  --color-white: #fff;
+  --color-white-grey: #rgb(214, 214, 214);
+  --color-yellow: #f5d000;
+}
+
+.Pokemon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #121212;
+}
+
+.pokemonId {
+  display: inline-flex;
+  justify-content: center;
+  align-content:flex-start;
+  flex-wrap: wrap;
+  position: relative;
+  border-radius: 2rem;
+  width: 60%;
+  height: 95%;
+  background-color: white;
+  transition: all .3s ease-in-out;
+  overflow-y: scroll;
+}
+.custom-shape-divider-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+.custom-shape-divider-bottom svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 50px;
+}
+.custom-shape-divider-top {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.custom-shape-divider-top svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 30px;
+}
+.custom-shape-divider-bottom .shape-fill,
+.custom-shape-divider-top .shape-fill {
+  fill: #FFFFFF;
+}
+.pokemonId__header {
+  /* position: absolute; */
+  position: relative;
+  height: 230px;
+  top: 0;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.pokemonId__img {
+  position: absolute;
+  width: 230px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+.pokemonId__img:hover {
+  transform: translate(-50%, 10px) scale(1.2);
+}
+
+.pokemonId__id {
+  position: absolute;
+  left: 4%;
+  color: rgba(255, 255, 255, 0.459);
+  font-size: 4rem;
+  margin: 15px 0 5px 0;
+}
+
+.pokemonId__name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  border-radius: 1rem;
+  color: white;
+  margin: 2% 30%;
+  text-transform: capitalize;
+}
+
+.pokemonId__features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 8%;
+  gap: 30px;
+}
+
+.pokemonId__feature {
+  font-size: 1.3rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+  flex-wrap: wrap;
+  width: 40%;
+  height: 70%;
+  border-radius: 1rem;
+  /* font-weight: bold; */
+}
+
+.pokemonId__feature-name {
+ width: 100%;
+ text-align: center;
+ font-size: 1.5rem;
+}
+
+.pokemonId__feature-value {
+  margin: 4px 0 0 0;
+}
+
+.pokemonId__types {
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+  flex-wrap: wrap;
+  width: 50%;
+  height: 10%;
+  font-size: 1.1rem;
+  color: white;
+}
+.pokemonId__type-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: .5rem;
+  margin: 0 20%;
+  width: 50%;
+  height: 25%;
+  font-size: 1.5rem;
+}
+.pokemonId__type-value {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: .5rem;
+  width: 23%;
+  height: 35%;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.pokemonId__info-skills {
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+  flex-wrap: wrap;
+  width: 80%;
+  height: 8%;
+}
+
+.pokemonId__skill-title {
+  width: 100%;
+  text-align: center;
+}
+
+
+.pokemonId__skill-value {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 25%;
+  height: 3rem;
+  margin: 0 2%;
+  border-radius: .5rem;
+  text-transform: capitalize;
+}
+
+.pokemonId__stats {
+  background-color: var(--color-white-grey);
+  box-shadow: 0px 2px 16px rgba(29, 29, 29, 0.288);
+  width: 80%;
+  height: 40%;
+  border-radius: 5px;
+  display: flex;
+  align-content: space-around;
+  margin-top: 3%;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 3% 0;
+}
+.pokemonId__stats h2{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 8%;
+  border-radius: .5rem;
+}
+
+.stat{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 90%;
+  height: 18%;
+  padding: 0 2%;
+}
+.stat p{
+  width: 10%;
+  display: flex;
+  padding-left: 2%;
+}
+.stat span{
+  width: 10%;
+  display: flex;
+  justify-content: flex-start;
+}
+.bar{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+  border-radius: 1.2rem;
+  background-color: rgb(218, 218, 218);
+}
+.progress{
+  transition: all 1.5s ease-in-out;
+  width: 80%;
+  height: 100%;
+  
+  border-radius: 1.2rem;
+}
+.moves{
+  width: 80%;
+  text-align: center;
+  height: auto;
+  margin-top: 1%;
+  font-size: 2.5rem;
+}
+.move{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width:auto;
+  border-radius: .5rem;
+  color: white;
+  margin: 2%;
+  padding: 0 3%;
+}
+
+.pokemon__nav-button {
+  display: flex;
+  position: absolute;
+  top: 4%;
+  left: 3%;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  height: 5rem;
+  font-family: 'Kanit';
+  border-radius: 15px;
+  background-color: rgb(202, 202, 202);
+  cursor: pointer;
+  font-size: 1.6rem;
+  border: none;
+  z-index: 10;
+}
+
+.pokemon__nav-button:hover {
+  background-color: var(--color-red);
+}
+
+
+@media screen and (max-width: 500px) {
+  .pokemonId{
+    width: 95%;
+  }
+  .pokemon__nav-button{
+    left: 72%;
+  }
+}
+
+/* Colors */
+
+.bg-normal {
+  background: #735259;
+}
+.bg-fighting {
+  background: #96402a;
+}
+.bg-flying {
+  background: #beb14c;
+}
+.bg-poison {
+  background: #5b3184;
+  color: white;
+}
+.bg-ground {
+  background: #654008;
+}
+.bg-rock {
+  background: #7e7e7e;
+}
+.bg-bug {
+  background: #e52d2d;
+}
+.bg-ghost {
+  background: #323569;
+}
+.bg-steel {
+  background: #5e736c;
+}
+.bg-fire {
+  background: #f96d6f;
+}
+.bg-water {
+  background: #133258;
+}
+.bg-grass {
+  background: #7ec6c5;
+}
+.bg-electric {
+  background: #0c1395;
+  color: white;
+}
+.bg-psychic {
+  background: #e52d2d;
+}
+.bg-ice {
+  background: #6fbedf;
+}
+.bg-dragon {
+  background: #478a93;
+}
+.bg-dark {
+  background: #030706;
+  color: white;
+}
+.bg-fairy {
+  background: #971b45;
+}
+.bg-unknown {
+  background: #696767;
+}
+.bg-shadow {
+  background: #6c31a3;
+}
